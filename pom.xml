@@ -7,8 +7,13 @@
   
     <dependencies>
         <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+        </dependency>   
+        <dependency>
             <groupId>com.google.gwt</groupId>
-            <artifactId>gwt-user</artifactId><!--gwt-user ver2022.07.05 -->
+            <artifactId>gwt-user</artifactId><!-- gwt-user ver2022.07.05 -->
             <exclusions>
                 <exclusion>
                     <groupId>com.google.jsinterop</groupId>
@@ -29,7 +34,7 @@
             </exclusions>
             <version>2.10.0</version>
             <scope>provided</scope>
-        </dependency>      
+        </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>com.tugalsan.api.executable</artifactId>
