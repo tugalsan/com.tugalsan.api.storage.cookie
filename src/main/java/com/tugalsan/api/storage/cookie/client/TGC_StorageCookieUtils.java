@@ -10,7 +10,7 @@ import com.tugalsan.api.time.client.*;
 
 public class TGC_StorageCookieUtils {
 
-    final private static TGC_Log d = TGC_Log.of(TGC_StorageCookieUtils.class.getSimpleName());
+    final private static TGC_Log d = TGC_Log.of(TGC_StorageCookieUtils.class);
 
     public static boolean supported() {
         return Cookies.isCookieEnabled();
