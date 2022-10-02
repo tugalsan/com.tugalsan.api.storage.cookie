@@ -14,7 +14,7 @@ public class TS_StorageCookieUtils {
         if (cookies == null) {
             return TGS_ListUtils.of();
         }
-        return TGS_StreamUtils.toList(Arrays.stream(cookies).map(c -> c.getName()));
+        return TGS_StreamUtils.toLst(Arrays.stream(cookies).map(c -> c.getName()));
     }
 
     public static Integer valInt(HttpServletRequest req, String name) {
