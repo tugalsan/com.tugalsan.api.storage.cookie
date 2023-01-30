@@ -48,7 +48,7 @@ public class TGC_StorageCookieUtils {
         return Cookies.getCookie(str);
     }
 
-    @Deprecated //TODO: TIME ZONE OFFSET SHOULD BE TAKEN INTO ACCOUNT ON CLIENTSIDE!
+    @Deprecated //WARNING!: TIME ZONE OFFSET SHOULD BE TAKEN INTO ACCOUNT ON CLIENTSIDE!
     public static void set_durationSeconds(boolean shared, CharSequence param, CharSequence value, long secs) {
         var expTime = new Date(System.currentTimeMillis() + (TGC_TimeUtils.getOffsetHours() * 60 * 60 + secs) * 1000L);
         if (shared) {
