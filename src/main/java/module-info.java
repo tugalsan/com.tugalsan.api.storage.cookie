@@ -1,6 +1,6 @@
 module com.tugalsan.api.storage.cookie {
     requires javax.servlet.api;
-    requires com.tugalsan.api.executable;
+    requires com.tugalsan.api.runnable;
     requires com.tugalsan.api.thread;
     requires com.tugalsan.api.time;
     requires com.tugalsan.api.log;
