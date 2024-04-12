@@ -3,6 +3,7 @@ module com.tugalsan.api.storage.cookie {
     requires com.tugalsan.api.runnable;
     requires com.tugalsan.api.thread;
     requires com.tugalsan.api.time;
+    requires com.tugalsan.api.union;
     requires com.tugalsan.api.log;
     requires com.tugalsan.api.stream;
     requires com.tugalsan.api.cast;
