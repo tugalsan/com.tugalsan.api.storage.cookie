@@ -1,7 +1,7 @@
 package com.tugalsan.api.storage.cookie.client;
 
 import com.google.gwt.user.client.*;
-import com.tugalsan.api.callable.client.TGS_CallableType0_Run;
+import com.tugalsan.api.function.client.TGS_Func;
 import java.util.*;
 
 import com.tugalsan.api.list.client.*;
@@ -75,7 +75,7 @@ public class TGC_StorageCookieUtils {
         set_durationSeconds(shared, param, value, TGS_TimeUtils.SECS_TIMEOUT_MINUTE() * minutes);
     }
 
-    public static void afterSet(CharSequence param, TGS_CallableType0_Run exe) {
+    public static void afterSet(CharSequence param, TGS_Func exe) {
         var duration = 1;
         TGC_ThreadUtils.run_afterSeconds_afterGUIUpdate(t -> {
             var val = get(param);
