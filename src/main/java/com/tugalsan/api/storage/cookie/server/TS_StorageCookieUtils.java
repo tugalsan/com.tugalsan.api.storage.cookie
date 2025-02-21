@@ -18,7 +18,7 @@ public class TS_StorageCookieUtils {
     }
 
     public static Integer valInt(HttpServletRequest req, String name) {
-        return TGS_CastUtils.toInteger(valStr(req, name));
+        return TGS_CastUtils.toInteger(valStr(req, name)).orElse(null);
     }
 
     public static String valStr(HttpServletRequest req, String name) {
