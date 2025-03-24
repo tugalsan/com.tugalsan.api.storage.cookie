@@ -7,7 +7,7 @@ import com.tugalsan.api.list.client.*;
 import com.tugalsan.api.log.client.*;
 import com.tugalsan.api.thread.client.*;
 import com.tugalsan.api.time.client.*;
-import com.tugalsan.api.function.client.maythrow.uncheckedexceptions.TGS_FuncMTUCE;
+import com.tugalsan.api.function.client.maythrowexceptions.unchecked.TGS_FuncMTU;
 
 public class TGC_StorageCookieUtils {
 
@@ -75,7 +75,7 @@ public class TGC_StorageCookieUtils {
         set_durationSeconds(shared, param, value, TGS_TimeUtils.SECS_TIMEOUT_MINUTE() * minutes);
     }
 
-    public static void afterSet(CharSequence param, TGS_FuncMTUCE exe) {
+    public static void afterSet(CharSequence param, TGS_FuncMTU exe) {
         var duration = 1;
         TGC_ThreadUtils.run_afterSeconds_afterGUIUpdate(t -> {
             var val = get(param);
