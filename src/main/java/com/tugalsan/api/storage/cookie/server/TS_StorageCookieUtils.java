@@ -1,11 +1,11 @@
 package com.tugalsan.api.storage.cookie.server;
 
-import com.tugalsan.api.cast.client.*;
-import com.tugalsan.api.list.client.*;
-import com.tugalsan.api.stream.client.*;
+import module com.tugalsan.api.cast;
+import module com.tugalsan.api.list;
+import module com.tugalsan.api.stream;
+import module javax.servlet.api;
 import java.nio.charset.*;
 import java.util.*;
-import javax.servlet.http.*;
 
 public class TS_StorageCookieUtils {
 
